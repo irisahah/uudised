@@ -1,3 +1,285 @@
-blogi-konteiner {
-  padding: 1rem;
+.banner-image {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Navigation styles */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: #110239; /* Tumesini */
+  margin-bottom: 20px;
+}
+
+nav ul li a {
+  color: #04c9fd; /* Sini */
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #ffa83e; /* Oranz */
+}
+
+/* General styling for buttons */
+button, .button-link {
+  background-color: #04c9fd; /* Sini */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:hover, .button-link:hover {
+  background-color: white; 
+  color: #110239; /* Tumesini */
+  border: 2px solid #04c9fd; /* Sini */
+}
+
+/* Style for the containers */
+.container {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* Blog container specific style */
+.blogi-konteiner {
+  background-color: #9cd5aa; /* Rohe */
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* CSS for Blog Post Page */
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+  background-color: #110239; /* Tumesini */
+}
+
+a {
+  color: #04c9fd; /* Sini */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffa83e; /* Oranz */
+}
+
+/* Header and Navigation */
+header {
+  background-color: #110239; /* Tumesini */
+  padding: 20px 0;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ffdd71; /* Kolla */
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #ffa83e; /* Oranz */
+}
+
+/* Blog Posts */
+.blog-posts {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.blog-post {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #ffdd71; /* Kolla */
+  padding-bottom: 20px;
+}
+
+.blog-post h2 {
+  color: #ffdd71; /* Kolla */
+}
+
+.blog-post p {
+  margin-top: 10px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+/* Buttons and Links */
+button, .button-link {
+  background-color: #04c9fd; /* Sini */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, .button-link:hover {
+  background-color: #ffa83e; /* Oranz */
+  color: #110239; /* Tumesini */
+}
+
+/* Footer */
+footer {
+  background-color: #110239; /* Tumesini */
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+/* Utility Classes */
+.container {
+  padding: 0 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+
+/* In App.css */
+.blog-posts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.blog-post {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 300px;
+}
+
+.blog-post img {
+  max-width: 100%;
+  height: auto;
+}
+
+.read-more-btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.blog-post-full img {
+  max-width: 100%;
+  height: auto;
+}
+
+.blog-post-full h1, .blog-post-full p {
+  margin: 20px 0;
+}
+
+/* Global Blog Styles */
+.blog-posts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* Increase gap for better spacing */
+  justify-content: center;
+  padding: 20px;
+}
+
+.blog-post {
+  border: 1px solid #e1e1e1; /* Soften the border */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Add a subtle shadow */
+  border-radius: 8px; /* Round the corners */
+  overflow: hidden; /* Ensure nothing spills over the rounded corners */
+  width: 300px; /* Keep consistent width */
+  transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.blog-post:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.blog-post img {
+  width: 100%; /* Ensure image covers the width */
+  height: 200px; /* Fixed height for consistency */
+  object-fit: cover; /* Ensure image covers the space nicely */
+}
+
+.blog-post-content {
+  padding: 15px;
+}
+
+.blog-post-title {
+  font-size: 1.25rem; /* Increase title size */
+  margin-bottom: 10px; /* Add space below title */
+  color: #333; /* Dark color for better readability */
+}
+
+.blog-post-date {
+  font-size: 0.9rem; /* Smaller font size for date */
+  color: #666; /* Lighter color for subtlety */
+  margin-bottom: 15px; /* Space before blurb */
+}
+
+.blog-post-blurb {
+  font-size: 1rem; /* Comfortable reading size */
+  line-height: 1.6; /* Increase line height for readability */
+  margin-bottom: 20px; /* Space before the button */
+  color: #444; /* Slightly darker than date for emphasis */
+}
+
+.read-more-btn {
+  display: inline-block;
+  background-color: #007bff; /* Bright color for visibility */
+  color: white;
+  padding: 10px 20px; /* Increase padding for a larger button */
+  text-decoration: none;
+  border-radius: 20px; /* Fully rounded corners for the button */
+  font-weight: bold; /* Make text bold */
+  transition: background-color 0.2s; /* Smooth background color transition */
+}
+
+.read-more-btn:hover {
+  background-color: #0056b3; /* Darken button on hover */
 }
